@@ -33,23 +33,18 @@
   <script>
     window.$docsify = {
       name: 'Docsify Open Publishing Starter Kit',
-      repo: 'https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit/',
+      repo: 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/',
       loadSidebar: true,
       homepage: '/basics/overview.md',
       plugins: [
         function (hook, vm) {
-          hook.afterEach(function(html, next) {
-              let reg = new RegExp("src=\"\/", 'ig');
-              html = html.replace(reg, "src=\"");
-              next(html);
-          })
           hook.beforeEach(function (html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = 'https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit/tree/master/docs/' + vm.route.file
+              url = 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/tree/master/docs/' + vm.route.file
             }
             var editHtml = '[:memo: Edit this Page on GitHub](' + url + ')\n'
 

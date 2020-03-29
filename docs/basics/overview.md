@@ -1,8 +1,6 @@
 # Overview
 
-Local test image:
-
 ```markdown
-![Octocat](octocat.jpg)
+![Octocat](../basics/octocat.jpg)
 ```
-![Octocat](octocat.jpg)
+![Octocat](../basics/octocat.jpg)
