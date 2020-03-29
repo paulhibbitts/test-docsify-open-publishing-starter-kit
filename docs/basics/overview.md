@@ -1,6 +1,6 @@
 # Overview
 
 ```markdown
-![Octocat](octocat.jpg)
+![Octocat](/assets/images/octocat.jpg)
 ```
-![Octocat](octocat.jpg)
+![Octocat](/assets/images/octocat.jpg)
