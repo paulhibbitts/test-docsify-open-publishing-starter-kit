@@ -1,8 +1,10 @@
 # Overview
 
-<sl-badge>Badge</sl-icon></sl-badge>
+This is an example Shoelace Badge:  
+ <sl-badge>Badge</sl-icon></sl-badge>
 
-<sl-button type="primary">Primary</sl-button>
+This is an example Shoelace Button:  
+<sl-button>Button</sl-button>
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
