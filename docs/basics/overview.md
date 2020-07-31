@@ -1,6 +1,13 @@
 # Overview
 
+<sl-badge>Badge</sl-icon></sl-badge>
+
+<sl-button type="primary">Primary</sl-button>
+
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
+
+![The Markdown Mark](https://upload.wikimedia.org/wikipedia/commons/3/37/Markdown-mark-solid.svg)  
+_Figure 1: The Markdown Mark_
 
 Some of the key benefits are:
 
@@ -570,9 +577,9 @@ Content for chapter one.
 Images have a similar syntax to links but include a preceding exclamation point.
 
 ```markdown
-![Minion](http://octodex.github.com/images/minion.png)
+![Minion](https://octodex.github.com/images/minion.png)
 ```
-![Minion](http://octodex.github.com/images/minion.png)
+![Minion](https://octodex.github.com/images/minion.png)
 
 and using a local image (which also displays in GitHub):
 
