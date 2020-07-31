@@ -1,12 +1,27 @@
 # Overview
 
-This is an example [Shoelace Badge](https://shoelace.style/components/badge):  
+Shoelace example #1:  
 
-<sl-badge>Badge</sl-icon></sl-badge>
+<sl-alert open>
+  <sl-icon slot="icon" name="info-circle"></sl-icon>
 
-This is an example [Shoelace Button](https://shoelace.style/components/button):  
+  This is **Markdown** within a Shoelace element!
 
-<sl-button>Button</sl-button>
+</sl-alert>  
+
+Shoelace example #2:  
+
+<sl-card class="card-overview">
+  <img
+    slot="image"
+    src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+    alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+  >
+
+  **Mittens**  
+  This kitten is as cute as he is playful. Bring him home today!
+
+</sl-card>
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
