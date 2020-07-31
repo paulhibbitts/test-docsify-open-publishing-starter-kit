@@ -1,9 +1,9 @@
 # Overview
 
-This is an example Shoelace Badge:  
+This is an example [Shoelace Badge](https://shoelace.style/components/badge):  
  <sl-badge>Badge</sl-icon></sl-badge>
 
-This is an example Shoelace Button:  
+This is an example [Shoelace Button](https://shoelace.style/components/button):  
 <sl-button>Button</sl-button>
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
