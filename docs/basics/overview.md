@@ -1,6 +1,6 @@
 # Overview
 
-Shoelace example #1 (empty before/after lines):  
+Shoelace example #1a (empty before/after lines):  
 
 <sl-alert open>
   <sl-icon slot="icon" name="info-circle"></sl-icon>
@@ -9,7 +9,7 @@ Shoelace example #1 (empty before/after lines):
 
 </sl-alert>  
 
-Shoelace example #1 (no empty before/after lines):  
+Shoelace example #1b (no empty before/after lines):  
 
 <sl-alert open>
   <sl-icon slot="icon" name="info-circle"></sl-icon>
