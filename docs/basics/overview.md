@@ -23,6 +23,23 @@ Shoelace example #2:
 
 </sl-card>
 
+Shoelace example #3:  
+
+<sl-alert class="grey-background" type="info" open>
+
+## What's Happening This Week
+
+### Important Reminders
+  * Journey Map assignment <sl-badge type="info">Jun 12 11:59pm PDT</sl-icon></sl-badge>
+  * Course Reflection Log assignment <sl-badge type="info">Aug 3rd 11:59pm PDT</sl-icon></sl-badge>
+
+### Required Readings & One-Minute Summaries
+
+No weekly readings or one-minute summaries this week.
+
+</sl-alert>
+
+
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
 ![The Markdown Mark](https://upload.wikimedia.org/wikipedia/commons/3/37/Markdown-mark-solid.svg)  
