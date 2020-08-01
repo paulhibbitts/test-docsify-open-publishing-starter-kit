@@ -38,6 +38,6 @@
    background: #e2e3e5;
  }
 
- sl-alert .markdown-section figure, sl-alert .markdown-section p, sl-alert .markdown-section ol, sl-alert .markdown-section ul {
-      margin: 0em 0;
-  }
+ .markdown-section sl-alert figure, .markdown-section sl-alert p, .markdown-section sl-alert ol, .markdown-section sl-alert ul {
+      margin: 0;
+ }
