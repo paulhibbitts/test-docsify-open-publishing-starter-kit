@@ -47,10 +47,6 @@
       padding: 0;
 }
 
-.markdown-section sl-alert h3 {
-      margin: 0;
-}
-
 .markdown-section sl-card figure, .markdown-section sl-card p, .markdown-section sl-card ol, .markdown-section sl-card ul {
       margin: 0;
 }
