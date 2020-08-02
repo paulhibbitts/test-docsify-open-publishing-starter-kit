@@ -43,6 +43,7 @@
 }
 
 .markdown-section sl-alert h2 , .markdown-section sl-alert h3 {
+      margin: 0;
       padding: 0;
 }
 
