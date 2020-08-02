@@ -38,6 +38,10 @@
    background: #e2e3e5;
  }
 
- .markdown-section sl-alert card-overview figure, .markdown-section sl-alert p, .markdown-section sl-alert ol, .markdown-section sl-alert ul {
+ .markdown-section sl-alert figure, .markdown-section sl-alert p, .markdown-section sl-alert ol, .markdown-section sl-alert ul {
+      margin: 0;
+ }
+
+ .markdown-section card-overview figure, .markdown-section card-overview p, .markdown-section card-overview ol, .markdown-section card-overview ul {
       margin: 0;
  }
