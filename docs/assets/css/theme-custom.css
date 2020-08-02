@@ -48,7 +48,7 @@
 }
 
 .markdown-section sl-alert h3 {
-      margin: 10,0,0;
+      margin-top: 10px;
 }
 
 .markdown-section sl-card figure, .markdown-section sl-card p, .markdown-section sl-card ol, .markdown-section sl-card ul {
