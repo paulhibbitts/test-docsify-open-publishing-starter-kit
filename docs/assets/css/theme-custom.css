@@ -42,6 +42,6 @@
       margin: 0;
  }
 
- .markdown-section card-overview figure, .markdown-section card-overview p, .markdown-section card-overview ol, .markdown-section card-overview ul {
+ .markdown-section sl-card figure, .markdown-section sl-card p, .markdown-section sl-card ol, .markdown-section sl-card ul {
       margin: 0;
  }
