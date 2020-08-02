@@ -35,7 +35,7 @@
 }
 
 .grey-background::part(base) {
-   background: var(--blockquote-color);
+   background: #f6f7f6;
  }
 
 .markdown-section sl-alert figure, .markdown-section sl-alert p, .markdown-section sl-alert ol, .markdown-section sl-alert ul {
