@@ -1,45 +1,5 @@
 # Overview
 
-Shoelace example #1:  
-
-<sl-alert open>
-  <sl-icon slot="icon" name="info-circle"></sl-icon>
-
-  This is **Markdown** within a Shoelace element!
-
-</sl-alert>  
-
-Shoelace example #2:  
-
-<sl-card class="card-overview">
-  <img
-    slot="image"
-    src="https://images.unsplash.com/photo-1559209172-0ff8f6d49ff7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-    alt="A kitten sits patiently between a terracotta pot and decorative grasses."
-  >
-
-  **Mittens**  
-  This kitten is as cute as he is playful. Bring him home today!
-
-</sl-card>
-
-Shoelace example #3:  
-
-<sl-alert class="grey-background" type="info" open>
-
-## What's Happening This Week
-
-### Important Reminders
-  * Journey Map assignment <sl-badge type="info">Jun 12 11:59pm PDT</sl-icon></sl-badge>
-  * Course Reflection Log assignment <sl-badge type="info">Aug 3rd 11:59pm PDT</sl-icon></sl-badge>
-
-### Required Readings & One-Minute Summaries
-
-No weekly readings or one-minute summaries this week.
-
-</sl-alert>
-
-
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
 ![The Markdown Mark](https://upload.wikimedia.org/wikipedia/commons/3/37/Markdown-mark-solid.svg)  

@@ -1,4 +1,5 @@
 :root {
+    --base-font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
     --base-font-size                                  : 16px;
     --link-color                                      : #0A75BD;
     --sidebar-name-color                              : #0A75BD;
@@ -8,11 +9,6 @@
     --sidebar-nav-pagelink-background-image--active   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='black' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
     --sidebar-nav-pagelink-background-image--collapse : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='11.2' viewBox='0 0 7 11.2'%3E%3Cpath d='M1.5 1.5l4 4.1 -4 4.1' stroke-width='1.5' stroke='black' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
     --sidebar-nav-pagelink-background-image--loaded   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.2' height='7' viewBox='0 0 11.2 7'%3E%3Cpath d='M1.5 1.5l4.1 4 4.1-4' stroke-width='1.5' stroke='black' fill='none' stroke-linecap='square' stroke-linejoin='miter' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-
-    /* Changes the primary color to a shade of orange at 90% saturation */
-    --sl-color-primary-hue: 30;
-    --sl-color-primary-saturation: 90%;
-
 }
 
 .video-container {
@@ -32,28 +28,4 @@
 
 .responsive-wrap iframe{
   max-width: 100%;
-}
-
-/* Style changes for Shoelace web components within Docsify Markdown content */
-
-.grey-background::part(base) {
-   background: #f6f7f6;
- }
-
-.markdown-section sl-alert figure, .markdown-section sl-alert p, .markdown-section sl-alert ol, .markdown-section sl-alert ul {
-      margin: 0;
-}
-
-.markdown-section sl-alert h2 {
-      border: 0;
-      margin: 0;
-      padding: 0;
-}
-
-.markdown-section sl-alert h3 {
-      margin-top: 10px;
-}
-
-.markdown-section sl-card figure, .markdown-section sl-card p, .markdown-section sl-card ol, .markdown-section sl-card ul {
-      margin: 0;
 }
