@@ -52,7 +52,7 @@ To only display Docsify page content, add the following to a Docsify page URL:
 
 `?embedded=true`
 
-For example, https://hibbitts-design.github.io/docsify-open-course-starter-kit/#/ would display a standard Docsify page while https://hibbitts-design.github.io/docsify-open-course-starter-kit/#/?embedded=true would only display page content (i.e. no sidebar or optional navbar is shown).
+For example, https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/ would display a standard Docsify page while https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/?embedded=true would only display page content (i.e. no sidebar or optional navbar is shown).
 
 📼 Video Walkthrough of Local Docsify Install/Config
 ---
