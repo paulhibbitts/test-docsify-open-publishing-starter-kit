@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Docsify Open Publishing Starter Kit</title>
@@ -26,16 +27,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <div id="app"></div>
   <script>
-  function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
         results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
     // Docsify
     window.$docsify = {
@@ -43,29 +45,31 @@
       // -----------------------------------------------------------------
       name: 'Docsify Open Publishing Starter Kit',
       // repo: 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/',
-      homepage: '/basics/overview.md',
+      homepage: 'welcome.md',
       loadSidebar: true,
       externalLinkTarget: '_blank',
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
-      auto2top   : true,
-      maxLevel   : 2,
+      auto2top: true,
+      maxLevel: 2,
       subMaxLevel: 0,
       hideSidebar: getParameterByName('embedded') === 'true',
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
       search: {
-        depth      : 3,
-        noData     : 'No matches found.',
+        depth: 3,
+        noData: 'No matches found.',
         placeholder: 'Enter search text here...'
       },
 
       // CUSTOM PLUGINS
       // -----------------------------------------------------------------
       plugins: [
-        function (hook, vm) {
+
+        function(hook, vm) {
+
           hook.beforeEach(function (html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
@@ -84,9 +88,32 @@
             } else {
               return html + '\n\n----\n\n' + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal;">Powered by docsify</a>'
             }
-
           })
+
+          hook.doneEach(function() {
+            document.querySelectorAll(".sidebar-nav > ul > li").forEach(
+              function(node, index, nodelist) {
+                var span = document.createElement("span");
+                span.innerHTML = node.firstChild.data;
+                span.style.cursor = "pointer";
+                span.onclick = function(event) {
+                  var ul = event.target.nextElementSibling;
+                  if (ul.style.display === "none") {
+                    ul.style.display = "block";
+                  } else {
+                    ul.style.display = "none";
+                  }
+                };
+                node.firstChild.replaceWith(span);
+                node.lastChild.style.display = "none";
+              });
+            var active = document.querySelector(".sidebar-nav li.active");
+            if (active) {
+              active.parentElement.style.display = "block";
+            }
+          });
         }
+
       ]
     }
   </script>
@@ -108,4 +135,5 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 
 </body>
+
 </html>
