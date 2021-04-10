@@ -1,7 +1,7 @@
 - Chapter One
   - [Introduction](chapter-1/introduction.md)
-  - [Topic 1](chapter-1/installation.md)
-  - [Topic 2](chapter-1/requirements.md)
+  - [Topic 1](chapter-1/topic-1.md)
+  - [Topic 2](chapter-1/topic-2.md)
 - Chapter Two
   - [Introduction](chapter-2/introduction.md)
   - [Topic 1](chapter-2/topics-1.md)
@@ -10,8 +10,8 @@
   - [Topic 4](chapter-2/topics-4.md)
 - Chapter Three
   - [Introduction](chapter-3/introduction.md)
-  - [Topic 1](chapter-3/adv-topic-1.md)
-  - [Topic 2](chapter-3/adv-topic-2.md)
+  - [Topic 1](chapter-3/topic-1.md)
+  - [Topic 2](chapter-3/topic-2.md)
 - Chapter Four
   - [Introduction](#)
   - [Topic 1](#)
