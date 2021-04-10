@@ -54,6 +54,8 @@
 
       --sidebar-nav-link-font-weight--active: bold;
 
+      --pagination-title-color: #0B87DA;
+
     }
   </style>
 
@@ -83,8 +85,6 @@
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
       auto2top: true,
-      maxLevel: 2,
-      subMaxLevel: 0,
       hideSidebar: getParameterByName('embedded') === 'true',
 
       // PLUGIN SETTINGS
@@ -165,6 +165,13 @@
 
   <!-- Tabs Plugin-->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <!-- Pagination Plugin -->
+  <script>
+    if (!(getParameterByName('embedded') === 'true')) {
+        document.write('<script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"><\/script>');
+    }
+  </script>
 
 </body>
 
