@@ -26,6 +26,37 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
+  <style>
+    :root {
+      --base-font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+      --base-line-height: 1.6;
+      --base-font-size: 1.1rem;
+
+      --heading-h2-border-style: none;
+      --heading-h1-margin: 0rem 0rem -1.25rem 0rem;
+      --heading-h2-margin: 0rem 0rem -2rem 0rem;
+      --heading-h3-margin: 0rem 0rem -1rem 0rem;
+      --heading-h4-margin: 0rem 0rem -.75rem 0rem;
+      --heading-h5-margin: 0rem 0rem -.5rem 0rem;
+      --heading-h6-margin: 0rem 0rem 0rem 0rem;
+      --heading-h1-font-size: 28px;
+      --heading-h2-font-size: 24px;
+      --heading-h3-font-size: 21px;
+      --heading-h4-font-size: 19px;
+      --heading-h5-font-size: 18px;
+      --heading-h6-font-size: 16px;
+      --heading-h1-font-weight: 400;
+      --heading-h2-font-weight: 400;
+      --heading-h3-font-weight: 400;
+      --heading-h4-font-weight: 400;
+      --heading-h5-font-weight: 400;
+      --heading-h6-font-weight: 400;
+
+      --sidebar-nav-link-font-weight--active: bold;
+
+    }
+  </style>
+
 </head>
 
 <body>
@@ -84,7 +115,7 @@
             html = html.replace(new RegExp("../assets/images", 'ig'), "assets/images");
 
             if (!(getParameterByName('hidegithublink') === 'true')) {
-              return editHtml + html + '\n\n----\n\n' + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal;">Powered by docsify</a>'
+              return editHtml + '\n\n' + html + '\n\n----\n\n' + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal;">Powered by docsify</a>'
             } else {
               return html + '\n\n----\n\n' + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal;">Powered by docsify</a>'
             }
