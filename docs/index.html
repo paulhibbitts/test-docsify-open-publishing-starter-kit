@@ -33,10 +33,10 @@
       --base-font-size: 1.1rem;
 
       --heading-h2-border-style: none;
-      --heading-h1-margin: 0rem 0rem -1.00rem 0rem;
-      --heading-h2-margin: 0rem 0rem -1.75rem 0rem;
-      --heading-h3-margin: 0rem 0rem -.6rem 0rem;
-      --heading-h4-margin: 0rem 0rem -.5rem 0rem;
+      --heading-h1-margin: 0rem 0rem -1.25rem 0rem;
+      --heading-h2-margin: 0rem 0rem -2rem 0rem;
+      --heading-h3-margin: 0rem 0rem -1rem 0rem;
+      --heading-h4-margin: 0rem 0rem -.75rem 0rem;
       --heading-h5-margin: 0rem 0rem -.5rem 0rem;
       --heading-h6-margin: 0rem 0rem 0rem 0rem;
       --heading-h1-font-size: 28px;
@@ -111,7 +111,9 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = 'https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit/tree/master/docs/' + vm.route.file
+              // Replace the below URL variable with your own Repository URL path up to, and including, '/docs'
+              // For example, 'https://github.com/YourGitHubUsername/YourRepositoryName/tree/master/docs'
+              url = 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/tree/master/docs' +'/' + vm.route.file
             }
             var editHtml = '[:memo: Edit this Page on GitHub](' + url + ')\n'
 

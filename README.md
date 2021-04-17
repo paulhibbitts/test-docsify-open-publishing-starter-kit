@@ -1,10 +1,12 @@
 # Docsify Open Publishing Starter Kit
 
 [![Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/master/LICENSE)
-[![Docsify Gitter Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/docsifyjs/Lobby)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/LICENSE)
+<a href="https://discord.gg/Sn8RtSmw">
+    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
+</a>
 
-> This is a starter kit to create an open [Docsify](https://docsify.js.org) documentation site, with a link automatically created on each page to edit the source Markdown text in a GitHub or GitLab repository.
+> This is a starter kit to create an open [Docsify](https://docsify.js.org) documentation site. Global navigation elements can be hidden for seamlessly embedding pages into other platforms. Includes a pre-configured "Edit this Page on GitHub" link.
 
 📸 Docsify Open Publishing Screenshot
 ---
@@ -21,18 +23,24 @@ _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-desi
 
 1. Tap **Use this template** on the source repository (upper-right green button)
 2. Choose the name for your new repository to contain the copied site files and then tap **Create repository from template**
-2. Go to **Settings** of your newly created repository, scroll down to **GitHub Pages** and chose **master branch/docs folder** (see more details in the [Docsify documentation](https://docsify.js.org/#/deploy?id=github-pages))
-3. And you're done! (view your new site using the provided URL right below your **GitHub Pages** section - it can take up to 20 minutes for your site to be initially available)
+3. Go to **Settings** of your newly created repository, tap the **Pages** tab (on the left-hand side), choose **main branch/docs folder** and finally tap the **Save** button (see more details in the [Docsify documentation](https://docsify.js.org/#/deploy?id=github-pages))
+4. And you're done! (view your new site using the provided URL on the **Pages** tab - it can take up to 20 minutes for your site to be initially available)
 
 **Configure Linked GitHub Repository**  
 
-1. Edit the file `index.html` in your repository
-2. Find the sample GitHub repository URL `https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/tree/master/docs/` and replace it with your own repository URL, for example `https://github.com/YourGitHubUsername/Docsify/blob/master/docs/`
-3. Commit your changes.
+1. Edit the file index.html in the 'docs' folder of repository
+2. Find the current GitHub repository URL https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/tree/main/docs and replace it with your own repository URL, for example https://github.com/YourGitHubUsername/YourRepositoryName/tree/main/docs
+3. Commit your changes
 
-💻 Editing your Docsify Site Locally
+💻 Editing your Docsify Site Pages
 ---  
 
+**Editing Your Docsify Site Pages on GitHub**
+1. Go to the GitHub Docsify site page (in the `docs` folder) you want to edit
+2. Tap the **Pencil Icon** (top left-hand toolbar area) and then make the edits you want
+3. Scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
+
+**Editing Your Docsify Site Pages on Your Desktop**
 1. Tap **Clone** on your repository page
 2. Choose **Open Desktop** and follow the prompts, installing GitHub Desktop if not already present
 3. You will now be able to edit your Docsify site (in the `docs` folder) using the desktop editor of your choice (e.g. atom.io)
