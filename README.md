@@ -49,6 +49,9 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 🧩 Embedding Docsify Page Content into Other Systems
 ---  
 
+![ Docsify Open Publishing Page Ready for Embedding](screenshot-2.jpg)
+_Figure 2. Docsify Open Publishing page ready for embedding_
+
 The optional ‘embedded’ (all lowercase) URL parameter hides a site’s sidebar and optional navbar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams etc.
 
 To only display Docsify page content, add the following to a Docsify page URL:
