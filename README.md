@@ -33,7 +33,7 @@ _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-desi
 3. Find the original GitHub repository URL `https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit` and replace it with your own repository URL, for example `https://github.com/your-github-username/your-repository-name`
 4. Scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 
-💻 Locally Editing your Docsify Site Pages
+⌨️ Locally Editing your Docsify Site Pages
 ---  
 
 **Editing Your Docsify Site Pages on Your Desktop**
@@ -71,9 +71,9 @@ For example, https://hibbitts-design.github.io/docsify-open-publishing-starter-k
 [![Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran](youtube.png)](https://www.youtube.com/watch?v=TV88lp7egMw)  
 _Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran_
 
-⛔️ Offline Access
+💻 Running Docsify Locally
 ---
-You can run this site offline by using [Docsify](https://docsify.js.org/#/). Fork this repo, [install Docsify](https://docsify.js.org/#/quickstart) on your local machine, and then in the root folder of this repo, type `docsify serve docs`. The website will be served on port 3000 on your localhost: `localhost:3000`.
+You can run this site locally by using [Docsify](https://docsify.js.org/#/). Fork this repo, [install Docsify](https://docsify.js.org/#/quickstart) on your local machine, and then in the root folder of this repo, type `docsify serve docs`. The website will be served on port 3000 on your localhost: `localhost:3000`.
 
 📚 Learn More about Docsify
 ---
