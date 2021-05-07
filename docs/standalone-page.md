@@ -1,5 +1,12 @@
 # Standalone Page
 
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
 This is an example standalone page, where an image from a shared folder is included. This page also shows how to add classes to Markdown images and text for altering their appearance.
 
 ![Mountain](assets/images/chase-moyer-730496-unsplash.jpg)  
