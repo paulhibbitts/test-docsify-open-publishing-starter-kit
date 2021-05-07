@@ -213,7 +213,7 @@
 }
 
 @media screen and (max-width:800px) {
-  .column {
+  .markdown-section .column {
     width: 100%;
   }
 }
