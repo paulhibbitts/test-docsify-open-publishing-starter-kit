@@ -38,7 +38,7 @@ _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-desi
 
 Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.js.org/#/deploy?id=gitlab-pages)!
 
-🔗 Activating the “Edit this Page” Link
+📝 Activating the “Edit this Page” Link
 ---   
 
 1. At the top-level of your GitHub Repository copy the URL
@@ -56,7 +56,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 4. Find the line `var yourRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 5](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-5.png)
 
-📝 Editing Your Docsify Site Pages on GitHub
+⌨️ Editing Your Docsify Site Pages on GitHub
 ---  
 
 1. Go to the Docsify Markdown (.md) page in the `docs` folder of your repository you want to edit
