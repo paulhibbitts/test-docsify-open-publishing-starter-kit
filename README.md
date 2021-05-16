@@ -9,12 +9,12 @@
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-> This is a starter kit to create an open [Docsify](https://docsify.js.org) publishing site. Global navigation elements can be hidden for seamlessly embedding pages into other platforms. Includes a pre-configured "Edit this Page" link.
+> This is a starter kit to quickly create a Markdown-based open publishing site with the site generator [Docsify](https://docsify.js.org). Global navigation elements can be hidden for seamlessly embedding pages into other platforms. Includes an optional "Edit this Page" link.
 
-📸 Docsify Open Publishing Screenshot
+📸 Docsify Open Publishing Screenshots
 ---
 ![ Docsify Open Publishing Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_kokonybo.png)
-_Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-design.github.io/docsify-open-publishing-starter-kit/](https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/)_
+_Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/)_
 
 🚀 GitHub Pages Quickstart
 ---
@@ -25,9 +25,16 @@ _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-desi
 **Installation and Deployment**
 
 1. Tap **Use this template** on the source repository (upper-right green button)
+![ Docsify Open Publishing Starter Kit - Install Page 1](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/op-install-1.png)
+
 2. Choose the name for your new repository to contain the copied site files and then tap **Create repository from template**
+![ Docsify Open Publishing Starter Kit - Install Page 2](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/op-install-2.png)
+
 3. Go to **Settings** of your newly created repository, tap the **Pages** tab (on the left-hand side), choose **main branch**, then **docs folder** and finally tap the **Save** button (see more details in the [Docsify documentation](https://docsify.js.org/#/deploy?id=github-pages))
-4. And you're done! (view your new site using the provided URL on the **Pages** tab - it can take up to 20 minutes for your site to be initially available)
+![ Docsify Open Publishing Starter Kit - Install Page 3](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/op-install-3.png)
+
+4. And you're done! (view your new site using the provided URL on the **Pages** tab - it can take up to 10 minutes for your site to be initially available)
+![ Docsify Open Publishing Starter Kit - Install Page 4](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/op-install-4.png)
 
 **Editing Your Docsify Site Pages on GitHub**
 
@@ -35,19 +42,19 @@ _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-desi
 2. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
 3. Scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 
-[Learn more about pages in Docsify.](https://docsify.js.org/#/more-pages)
+[Learn more about creating pages in Docsify.](https://docsify.js.org/#/more-pages)
 
 📝 Activating the “Edit this Page” Link
 ---   
 
-1. Go to the file index.html in the `docs` folder of your repository
-2. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
-3. Find the line `var yourRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes. For example, `var yourRepoURL = 'https://github.com/YourGitHubUsername/YourRepositoryName/tree/main/docs'`.
-4. Scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
+1. At the top-level of your GitHub Repository, copy the URL and then tap on the `docs` folder
+2. Tap on the file `index.html` within the `docs` folder
+3. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
+4. Find the line `var yourRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 
-[Learn more about Docsify's configuration options.](https://docsify.js.org/#/configuration?id=configuration)
+[View these instructions with accompanying screenshots.](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/wiki/Activating-the-Edit-this-Page-Link)
 
-⌨️ Locally Editing your Docsify Site Pages
+💻 Locally Editing your Docsify Site Pages
 ---  
 
 **Editing Your Docsify Site Pages on Your Desktop**
@@ -65,7 +72,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 🧩 Embedding Docsify Page Content into Other Systems
 ---  
 
-![ Docsify Open Publishing Page Ready for Embedding](screenshot-2.jpg)
+![ Docsify Open Publishing Page Ready for Embedding](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/Firefox_Screenshot_2021-05-13T20-02-39.574Z.png)
 _Figure 2. Docsify Open Publishing page ready for embedding_
 
 The optional ‘embedded’ (all lowercase) URL parameter hides a site’s sidebar and optional navbar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams etc.
@@ -74,18 +81,13 @@ To only display Docsify page content, add the following to a Docsify page URL:
 
 `?embedded=true`
 
-For example, https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true would only display page content (i.e. no sidebar or optional navbar is shown).
+For example, https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true would only display page content (i.e. no sidebar or optional navbar is shown).
 
 To optionally hide the 'Edit this Page' link, use the following:
 
 `?embedded=true&hidegitlink=true`
 
-For example, https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true&hidegitlink=true would only display page content (i.e. no sidebar or optional navbar is shown) and also hide the 'Edit this Page' link.
-
-📼 Video Walkthrough of Local Docsify Install/Config
----
-[![Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran](youtube.png)](https://www.youtube.com/watch?v=TV88lp7egMw)  
-_Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran_
+For example, https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true&hidegitlink=true would only display page content (i.e. no sidebar or optional navbar is shown) and also hide the 'Edit this Page' link.
 
 📚 Docsify and Markdown Resources
 ---
