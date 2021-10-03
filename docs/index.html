@@ -35,7 +35,7 @@
 
       --cover-max-width: 45em;
 
-      --heading-h2-border-style: 1.60rem;
+      --heading-h2-border-style: none;
       --heading-h1-margin: 1rem 0rem -0.5rem 0rem;
       --heading-h2-margin: 1rem 0rem -1.5rem 0rem;
       --heading-h3-margin: 1rem 0rem -.5rem 0rem;
@@ -77,7 +77,7 @@
   <div id="app"></div>
   <script>
     // Enter the URL of your own GitHub Repository in between the two quotes below
-    var yourRepoURL = 'https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit';
+    var gitLinkRepoURL = '';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editThisPageLinkText = 'Edit this Page';
@@ -88,7 +88,7 @@
     function getURLParameterByName(name, url = window.location.href) {
       name = name.replace(/[\[\]]/g, '\\$&');
       var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-          results = regex.exec(url);
+        results = regex.exec(url);
       if (!results) return null;
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
@@ -156,11 +156,11 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else {
-              url = yourRepoURL + '/blob/main/docs/' + vm.route.file
+              url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
             var editHtml = '[:memo: ' + editThisPageLinkText + '](' + url + ')\n'
 
-            if ((!(getURLParameterByName('hidegitlink') === 'true')) && (!!yourRepoURL)) {
+            if ((!(getURLParameterByName('hidegitlink') === 'true')) && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html + '\n' + '<hr>' + '\n\n' + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal;">Built with docsify</a>'
             } else {
               return html
