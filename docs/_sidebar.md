@@ -15,5 +15,5 @@
   - [Topic 2](chapter-3/topic-2.md)
 
 **Project Info**
-[GitHub Repository](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/)  
-[ReadMe](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md)  
+* [GitHub Repository](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/)  
+* [ReadMe](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md)  
