@@ -27,6 +27,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
+  <!-- ToC Plugin Stylesheet -->
+  <link rel="stylesheet" href="assets/css/toc.css">
+
   <style>
     :root {
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -196,6 +199,13 @@
   <!-- Pagination Plugin -->
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
+  <!-- Table of Contents Plugin -->
+  <script>
+    if (getURLParameterByName('toc') === 'true' || getURLParameterByName('ToC') === 'true') {
+      document.write('<script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"><\/script>');
+    }
+  </script>
+  
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 </body>
