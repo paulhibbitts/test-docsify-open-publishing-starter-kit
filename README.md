@@ -95,13 +95,31 @@ To only display Docsify page content, add the following to a Docsify page URL:
 
 `?embedded=true`
 
-For example, https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true would only display page content (i.e., no sidebar or optional navbar is shown).
+Example standard Docsify page:  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1  
+
+Example Docsify page displaying only page content (i.e., no sidebar is shown):  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+
+To optionally show a page Table of Contents (based on included Headers), use the following:
+
+`?embedded=true&toc=true`
+
+Example Docsify page displaying only page content:  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+
+Example Docsify page displaying only page content with a page Table of Contents included:  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true&toc=true  
 
 To optionally hide the 'Edit this Page' link, use the following:
 
 `?embedded=true&hidegitlink=true`
 
-For example, https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction would display a standard Docsify page while https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/chapter-1/introduction?embedded=true&hidegitlink=true would only display page content (i.e., no sidebar or optional navbar is shown) and also hide the 'Edit this Page' link.
+Example Docsify page displaying only page content:  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+
+Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
+https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true&hidegitlink=true  
 
 📚 Docsify and Markdown Resources
 ---
