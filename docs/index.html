@@ -131,15 +131,15 @@
             name              : 'Docsify Open Pages Starter Kit',
             homepage          : 'home.md',
             loadSidebar       : true,
-            loadNavbar        : false,
-            externalLinkTarget: (getURLParameterByName('standalone','_top','_blank')),
+            loadNavbar        : !(getURLParameterByName(['standalone','embedded'])),
+            externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
 
             // SIDEBAR NAVIGATION
             // -----------------------------------------------------------------
             auto2top   : true,
             maxLevel   : 3,
             subMaxLevel: 3,
-            hideSidebar: getURLParameterByName('standalone'),
+            hideSidebar: getURLParameterByName(['standalone','embedded']),
 
             // PLUGIN SETTINGS
             // -----------------------------------------------------------------
