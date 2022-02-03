@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docsify Open Pages Starter Kit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Docsify Open Course Starter Kit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
+
+    <!-- ToC Plugin Stylesheet -->
+    <!--  <link rel="stylesheet" href="assets/css/toc.css"> -->
+    <link rel="stylesheet" href="stylesheet" href="assets/css/toc.css">
+
+    <style>
+      :root {
+
+        --base-font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+
+        --base-line-height: 1.4;
+        --base-font-size: 1.1rem;
+
+        --cover-max-width: 45em;
+
+        --heading-h2-border-style: none;
+        --heading-h1-margin: 1rem 0rem -0.5rem 0rem;
+        --heading-h2-margin: 1rem 0rem -1.5rem 0rem;
+        --heading-h3-margin: 1rem 0rem -.5rem 0rem;
+        --heading-h4-margin: 1rem 0rem -.5rem 0rem;
+        --heading-h5-margin: 1rem 0rem -.5rem 0rem;
+        --heading-h6-margin: 1rem 0rem 0rem 0rem;
+        --heading-h1-font-size: 1.60rem;
+        --heading-h2-font-size: 1.40rem;
+        --heading-h3-font-size: 1.20rem;
+        --heading-h4-font-size: 1.15rem;
+        --heading-h5-font-size: 1.1rem;
+        --heading-h6-font-size: 1rem;
+        --heading-h1-font-weight: 400;
+        --heading-h2-font-weight: 400;
+        --heading-h3-font-weight: 400;
+        --heading-h4-font-weight: 400;
+        --heading-h5-font-weight: 400;
+        --heading-h6-font-weight: 400;
+
+        --navbar-root-margin: 0 0 0 .8em;
+
+        --sidebar-nav-link-font-weight--active: bold;
+
+        --link-color: #0B87DA;
+        --link-text-decoration: underline;
+        --link-text-decoration--hover: underline;
+
+        // Link colour to match visual styling of Canvas LMS
+        // --link-color: #008EE2;
+
+        --pagination-title-color: #0B87DA;
+
+      }
+    </style>
+
+<body>
+    <div id="app"></div>
+    <script>
+      // Enter the URL of your own GitHub Repository in between the two quotes below
+      var gitLinkRepoURL = 'https://github.com/paulhibbitts/test-docsify-open-pages-starter-kit';
+
+      // Customize the text for your Edit this Page on GitHub link between the two quotes below
+      var editThisPageLinkText = 'Edit this Page';
+
+      function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href) {
+
+        let exists = false;
+
+        if (Array.isArray(name)) {
+
+          name.forEach(element => {
+            if (getURLParameterByName(element)) {
+              exists = true;
+            }
+          });
+
+        } else {
+
+          name = name.toLowerCase().replace(/[\[\]]/g, '\\$&');
+
+          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+          var results = regex.exec(url.toLowerCase());
+
+          exists = (results && results[2]) ? true : false;
+        }
+
+        if (exists && isTrue) {
+          return isTrue;
+        }
+
+        if (!exists && isFalse) {
+          return isFalse;
+        }
+
+        return exists;
+      }
+
+      // remove after confirming
+      // TESTS: use url : /docs/#/module-01?ricardo=true&TOC=true
+      console.log('result:' + getURLParameterByName('toc')); // testing for any case toc Toc TOC
+      console.log('result:' + getURLParameterByName('standalone','_top','_blank')); // should be false
+      console.log('result:' + getURLParameterByName(['standalone','blabla', 'ricardo'],'_top','_blank')); // new array support, should be true.
+
+        // Docsify
+        window.$docsify = {
+            // GENERAL SETTINGS
+            // -----------------------------------------------------------------
+            name              : 'Docsify Open Pages Starter Kit',
+            homepage          : 'home.md',
+            loadSidebar       : true,
+            loadNavbar        : false,
+            externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
+
+            // SIDEBAR NAVIGATION
+            // -----------------------------------------------------------------
+            auto2top   : true,
+            maxLevel   : 3,
+            subMaxLevel: 3,
+            hideSidebar: getURLParameterByName(['standalone','embedded']),
+
+            // PLUGIN SETTINGS
+            // -----------------------------------------------------------------
+            pagination: {
+              previousText    : 'PREV',
+              nextText        : 'NEXT',
+              crossChapter    : false,
+              crossChapterText: true,
+            },
+
+            toc: {
+              scope: '.markdown-section',
+              headings: 'h2, h3, h4, h5, h6',
+              title: 'Table of Contents',
+            },
+
+          // CUSTOM PLUGINS
+          // -----------------------------------------------------------------
+          plugins: [
+            function (hook, vm) {
+              hook.beforeEach(function (html) {
+                if (/githubusercontent\.com/.test(vm.route.file)) {
+                  url = vm.route.file
+                    .replace('raw.githubusercontent.com', 'github.com')
+                    .replace(/\/master/, '/blob/master')
+                } else {
+                  url = gitLinkRepoURL +'/blob/main/docs/' + vm.route.file
+                }
+                var editHtml = '[:memo: ' + editThisPageLinkText + '](' + url + ')\n'
+
+                // Adjust GitHub displayable image URL format to also work in Docsify
+                html = html.replace(new RegExp("../assets/images", 'ig'), "assets/images");
+
+                if ((!(getURLParameterByName('hidegitlink')))  &&  (!!gitLinkRepoURL)) {
+                  return html + '<br />' + '\n\n' + '<hr>' + '\n\n' + editHtml
+                } else {
+                  return html
+                }
+
+              })
+            }
+          ]
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+    <!-- Table of Contents Plugin -->
+    <script>
+      if (getURLParameterByName('toc')) {
+        document.write('<script src="https:////unpkg.com/docsify-toc@1.0.2/dist/toc.js"><\/script>');
+      }
+    </script>
+
+</html>
