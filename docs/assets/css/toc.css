@@ -8,7 +8,7 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 400px);
+  width: 400px;
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
@@ -72,7 +72,7 @@ page_toc ul li {
   line-height: 1.6em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .page_toc {
     position: relative;
     left: 0;
@@ -85,7 +85,7 @@ page_toc ul li {
   }
   .nav {
     margin: 0 auto;
-    width: 800px;
+    width: 900px;
   }
   .page_toc p.title {
     font-weight: 300;
