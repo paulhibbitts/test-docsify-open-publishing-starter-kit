@@ -83,16 +83,13 @@ page_toc ul li {
     border-bottom: 1px solid #ddd;
     font-size: 1.0em;
   }
-  .page_toc a:before {
-    content: "- ";
-  }
   .nav {
     margin: 0 auto;
     width: 800px;
   }
   .page_toc p.title {
     font-weight: 300;
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
   .content {
     display: block;
