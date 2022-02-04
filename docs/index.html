@@ -86,40 +86,34 @@
 
         let exists = false;
 
-        if (Array.isArray(name)) {
+          if (Array.isArray(name)) {
 
-          name.forEach(element => {
-            if (getURLParameterByName(element)) {
-              exists = true;
-            }
-          });
+            name.forEach(element => {
+              if (getURLParameterByName(element)) {
+                exists = true;
+              }
+            });
 
-        } else {
+          } else {
 
-          name = name.toLowerCase().replace(/[\[\]]/g, '\\$&');
+            name = name.toLowerCase().replace(/[\[\]]/g, '\\$&');
 
-          var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-          var results = regex.exec(url.toLowerCase());
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            var results = regex.exec(url.toLowerCase());
 
-          exists = (results && results[2]) ? true : false;
+            exists = (results && results[2]) ? true : false;
+          }
+
+          if (exists && isTrue) {
+            return isTrue;
+          }
+
+          if (!exists && isFalse) {
+            return isFalse;
+          }
+
+          return exists;
         }
-
-        if (exists && isTrue) {
-          return isTrue;
-        }
-
-        if (!exists && isFalse) {
-          return isFalse;
-        }
-
-        return exists;
-      }
-
-      // remove after confirming
-      // TESTS: use url : /docs/#/module-01?ricardo=true&TOC=true
-      console.log('result:' + getURLParameterByName('toc')); // testing for any case toc Toc TOC
-      console.log('result:' + getURLParameterByName('standalone','_top','_blank')); // should be false
-      console.log('result:' + getURLParameterByName(['standalone','blabla', 'ricardo'],'_top','_blank')); // new array support, should be true.
 
         // Docsify
         window.$docsify = {
