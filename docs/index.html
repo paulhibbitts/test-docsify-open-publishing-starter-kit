@@ -257,20 +257,10 @@
   <!-- Darklight Theme Plugin -->
 
   <script>
-    <!-- Set hideDarkTheme to true to permanently remove the Dark Theme option -->
-    var hideDarkTheme = getURLParameterByName(['standalone','embedded']);
-    if (hideDarkTheme === false ) {
-      var sc = document.createElement("script");
-      sc.setAttribute("src", "https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js");
-      sc.setAttribute("type", "text/javascript");
-      document.head.appendChild(sc);
-    }
-  </script>
-
-  <script>
   <!-- Set hideDarkTheme to true to permanently remove the Dark Theme option -->
   var hideDarkTheme = getURLParameterByName(['standalone','embedded']);
   if (hideDarkTheme === false ) {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"><\/script>');
       document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"><\/script>');
     }
   </script>
