@@ -266,8 +266,9 @@
   </script>
 
   <script>
-      src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
-      type="text/javascript">
+    if (!(getURLParameterByName(['standalone','embedded']))) {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"><\/script>');
+    }
   </script>
   <!-- To activate the Dark Theme option, uncomment the above -->
 
