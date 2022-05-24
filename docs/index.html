@@ -87,6 +87,9 @@
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editThisPageLinkText = 'Edit this Page';
 
+    // Set standalone to true to permanently hide the Sidebar and Navbar
+    var standalone = false;
+
     // Get value from GET-parameter in URL
     // @param {array} name Parameter-name
     // @param {*} isTrue Return if found
@@ -134,8 +137,7 @@
       homepage: 'home.md',
       // coverpage      : 'coverpage.md',
       loadSidebar: true,
-      // Set loadNavbar to false to permanently hide the Navbar
-      loadNavbar        : !(getURLParameterByName(['standalone','embedded'])),
+      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone),
       externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
 
       // SIDEBAR NAVIGATION
@@ -144,8 +146,7 @@
       maxLevel: 3,
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
-      // Set hideSidebar to true to permanently hide the Sidebar
-      hideSidebar: getURLParameterByName(['standalone','embedded']),
+      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
@@ -256,8 +257,8 @@
 
   <!-- Darklight Theme Plugin -->
   <script>
-  <!-- Set hideDarkTheme to true to permanently remove the Dark Theme option -->
-  var hideDarkTheme = getURLParameterByName(['standalone','embedded']);
+  <!-- Set hideDarkTheme to true or false to permanently set the Dark Theme option -->
+  var hideDarkTheme = getURLParameterByName(['standalone','embedded']) || standalone);
   if (hideDarkTheme === false ) {
       document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"><\/script>');
       document.write('<script src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"><\/script>');
