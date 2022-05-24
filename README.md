@@ -9,11 +9,11 @@
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-> This is a starter kit to quickly create a Markdown-based open publishing site with the site generator [Docsify](https://docsify.js.org). Global navigation elements can be hidden for seamlessly embedding pages into other platforms. Includes an optional "Edit this Page" link.
+> This is a starter kit to quickly create Markdown-based article, portfolio and documentation websites with the site generator [Docsify](https://docsify.js.org). Global navigation elements can be hidden for seamlessly embedding pages into other platforms or sharing as standalone pages. Includes an optional "Edit this Page" link.
 
 📸 Docsify Open Publishing Screenshots
 ---
-![ Docsify Open Publishing Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_kokonybo.png)
+![ Docsify Open Publishing Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_l3dl0det.png)
 _Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/)_
 
 🚀 GitHub Pages Quickstart
@@ -67,7 +67,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 3. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 4](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-4.png)
 
-4. Find the line `var yourRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
+4. Find the line `var gitLinkRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 5](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-5.png)
 
 💻 Locally Editing Your Docsify Site Pages
@@ -83,43 +83,45 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 
 You can also clone (i.e download) a copy of your repository to your computer and [run Docsify locally](https://docsify.js.org/#/quickstart) to preview your site. See the below video for details.
 
-🧩 Embedding Your Docsify Page Content into Other Systems
+🖼 Using your Docsify Page Content with Other Systems
 ---  
 
 ![ Docsify Open Publishing Page Ready for Embedding](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-ready-for-embedding.png)
-_Figure 2. Docsify Open Publishing page ready for embedding_
+_Figure 2. Docsify Open Publishing page ready for embedding or linking as standalone content_
 
-The optional ‘embedded’ (all lowercase) URL parameter hides a site’s sidebar and optional navbar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams etc.
+The optional ‘standalone’ (all lowercase) URL parameter hides a site’s sidebar for seamlessly embedding Docsify page content within another platform such as Canvas LMS, Moodle, Microsoft Teams or being displayed in an existing or new Browser tab. The parameter 'embedded' is supported as an alias for `standalone`.
 
 To only display Docsify page content, add the following to a Docsify page URL:
 
-`?embedded=true`
+`?‘standalone’=true`
 
 Example standard Docsify page:  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/  
 
 Example Docsify page displaying only page content (i.e., no sidebar is shown):  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?standalone=true  
 
 To optionally show a page Table of Contents (based on included Headers), use the following:
 
-`?embedded=true&toc=true`
+`?‘standalone’=true&toc=true`
 
 Example Docsify page displaying only page content:  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
 
 Example Docsify page displaying only page content with a page Table of Contents included:  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true&toc=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&toc=true  
 
 To optionally hide the 'Edit this Page' link, use the following:
 
-`?embedded=true&hidegitlink=true`
+`?‘standalone’=true&hidegitlink=true`
 
 Example Docsify page displaying only page content:  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
 
 Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
-https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapter-1/topic-1?embedded=true&hidegitlink=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&hidegitlink=true.
+
+It is also possible to permanently display all pages as standalone, and to also always display a page Table of Contents - details can be found within the `index.html` file.
 
 📚 Docsify and Markdown Resources
 ---
@@ -127,8 +129,12 @@ https://paulhibbitts.github.io/test-docsify-open-publishing-starter-kit/#/chapte
 [Docsify Documentation](https://docsify.js.org/#/?id=docsifyg)  
 [Docsify Basics by MichaelCurrin](https://michaelcurrin.github.io/docsify-js-tutorial/#/?id=docsify-basics)  
 
+**Docsify Themable**  
+[Docsify Themeable Documentation](https://jhildenbiddle.github.io/docsify-themeable/#/introduction)  
+[Docsify Themeable GitHub](https://github.com/jhildenbiddle/docsify-themeable)  
+
 **Markdown**  
-[Markdown Cheat Sheet](https://warpedvisions.org/projects/markdown-cheat-sheet/)  
+[Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
 [Markdown Guide](https://www.markdownguide.org/)  
 
 📼 Video Walkthrough of Local Docsify Install/Config
