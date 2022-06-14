@@ -239,7 +239,7 @@
             }
             var editHtml = '[:memo: ' + editThisPageLinkText + '](' + url + ')\n'
 
-            if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
+            if ((!(getURLParameterByName(['standalone','embedded'])) && !(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html + '\n\n' + '<hr>' + '\n\n' + 'This site was built with the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
             } else {
               return html
