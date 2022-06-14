@@ -244,11 +244,11 @@
             if ( !(getURLParameterByName(['standalone','embedded'])) && !(getURLParameterByName('hidegitlink'))  && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
 
-            } else if ( !(getURLParameterByName(['standalone','embedded'])) && (getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
-              return html + '<br />' + '\n\n' + '<hr>' + creditHtml
-
             } else if ( getURLParameterByName(['standalone','embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html
+
+            } else if ( !(getURLParameterByName(['standalone','embedded']))) {
+              return html + '<br />' + '\n\n' + '<hr>' + creditHtml
 
             } else {
               return html
