@@ -83,7 +83,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 
 You can also clone (i.e download) a copy of your repository to your computer and [run Docsify locally](https://docsify.js.org/#/quickstart) to preview your site. See the below video for details.
 
-🖼 Using your Docsify Page Content with Other Systems
+🧩 Using your Docsify Page Content with Other Systems
 ---  
 
 ![ Docsify Open Publishing Page Ready for Embedding](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-ready-for-embedding.png)
@@ -121,7 +121,47 @@ https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/int
 Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&hidegitlink=true.
 
-It is also possible to permanently display all pages as standalone, and to also always display a page Table of Contents - details can be found within the `index.html` file.
+🖼 Presenting your Docsify Page Content as Standalone Webpages
+---  
+
+In addition to using URL parameters when embedding Docsify page content into other systems, it is possible to permanently display all pages as standalone, and to also always display a page Table of Contents.
+
+**To Display all Pages as Standalone**
+1. Open the `index.html` file for editing.
+2. Locate the line `var standalone = false;` and change it to `var standalone = true;`.
+3. Save the `index.html` file and reload site.
+
+**To Display Page Table of Contents**
+1. Open the `index.html` file for editing.
+2. Locate the line `var ToC = false;` and change it to `var showToC = true;`.
+3. Save the `index.html` file and reload site.
+
+Please note a page must have a series of Headings (#, ##, ###) for the Table of Contents to be displayed correctly.
+
+🛸 Docsify Remote Rendering
+---
+
+It is possible to render remote Markdown files (for example, a Markdown file in a GitHub repository) using Docsify by passing a URL parameter.  
+
+For example, to render a Markdown file named **README.md** (the expected default name) as a regular Docsify page the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/
+
+To render a Markdown file named **README.md** (the expected default name) as a standalone page the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/&standalone=true
+
+To render a Markdown file named **README.md** (the expected default name) as a standalone page with a table of contents the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/&standalone=true&toc=true
+
+To render a Markdown file named **introduction.md** as a regular Docsify page, the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md
+
+To render a Markdown file named **introduction.md** as a standalone page, the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&standalone=true
+
+To render a Markdown file named **introduction.md** as a standalone page with a table of contents, the URL would be:  
+https://hibbitts-design.github.io/docsify-open-publishing-starter-kit-remote/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&standalone=true&toc=true
+
+_TIP: To get the path of a file on GitHub for the **basepath** URL parameter, tap the **Raw** button when viewing the file and then remove the filename. If not a README file, the filename will need to be passed using the **homepage** URL parameter._
 
 📚 Docsify and Markdown Resources
 ---
@@ -145,3 +185,4 @@ _Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvar
 🙇‍Credits and Special Thanks
 ---
 [Docsify Themeable](https://github.com/jhildenbiddle/docsify-themeable)  
+[Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
