@@ -177,7 +177,7 @@ _TIP: To get the path of a file on GitHub for the **basepath** URL parameter, ta
 [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
 [Markdown Guide](https://www.markdownguide.org/)  
 
-⌨ Useful Markdown CSS Classes
+🧰 Useful Markdown CSS Classes
 ---
 
 * `badge`
