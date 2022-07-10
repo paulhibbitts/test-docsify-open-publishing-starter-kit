@@ -184,8 +184,7 @@ _TIP: To get the path of a file on GitHub for the **basepath** URL parameter, ta
 * `banner-image`
 * `banner-tall-image`
 * `button`  
-* `row`
-* `column`
+* `row` & `column`
 * `video-container-4by3`
 * `video-container-16by9`
 
