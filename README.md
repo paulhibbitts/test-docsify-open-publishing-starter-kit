@@ -208,10 +208,14 @@ _TIP: To get the path of a file on GitHub for the **basepath** URL parameter, ta
 ```html
 <div class="row">
 <div class="column">
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
 </div>
 <div class="column">
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
 </div>
 </div>
 ```
