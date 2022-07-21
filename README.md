@@ -147,7 +147,6 @@ It is possible to render remote Markdown files (for example, a Markdown file in 
 /*
 const params = new URLSearchParams(window.location.search);
 params.forEach((value, key) => {
-  // TODO: Parse numbers?
   window.$docsify[key] = value;
 });
 */
