@@ -141,7 +141,7 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 🛸 Docsify Remote Rendering
 ---
 
-It is possible to render remote Markdown files (for example, a Markdown file in a GitHub repository) using Docsify by passing a URL parameter. To enable this functionality the following section of code in the `index.html` file must be uncommented:
+It is possible to render remote Markdown files (for example, a Markdown file in a GitHub repository) using Docsify by passing a URL parameter. To enable this functionality, the following section of code in the `index.html` file must be uncommented:
 
 ```
 /*
