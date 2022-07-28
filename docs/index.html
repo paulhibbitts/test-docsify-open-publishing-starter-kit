@@ -160,9 +160,8 @@
       // Rename homepage to README.md and set homepage to README.md to default to README file for Remote Docsify
       homepage          : 'home.md',
       // coverpage      : 'coverpage.md',
-      // Set last option for loadSidebar to true for Remote Docsify
-      loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
-      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
+      loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
+      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       // Set externalLinkTarget to '_self' for Remote Docsify
       externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
 
@@ -172,7 +171,7 @@
       maxLevel: 3,
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
-      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone),
+      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
