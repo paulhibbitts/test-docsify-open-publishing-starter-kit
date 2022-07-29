@@ -332,7 +332,7 @@
 
   <!-- Hide Sidebar app title when displaying remote site  -->
   <script>
-    if (getURLParameterByName('sidebar')) {
+    if (window.$docsify['basePath']) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/hide-sidebar-appname.css" />');
     }
   </script>
