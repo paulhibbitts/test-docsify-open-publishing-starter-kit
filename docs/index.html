@@ -162,8 +162,7 @@
       // coverpage      : 'coverpage.md',
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
-      // Set externalLinkTarget to '_self' for Remote Docsify
-      externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
+      externalLinkTarget: (getURLParameterByName(['standalone','embedded','basePath'],'_top','_blank','_self')),
 
       // SIDEBAR NAVIGATION
       // ----------------------------------------------------------------
