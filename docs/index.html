@@ -161,32 +161,6 @@
       return exists;
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-
-      document.addEventListener('click', (e) => {
-        if (!e.target.getAttribute('href')?.match(/^#/)) return;
-
-          e.preventDefault();
-          const url  = window.location.href;
-          let newurl = e.target.getAttribute('href');
-          console.log (newurl);
-
-          if (url.indexOf("?embedded=true") >= 0) {
-            newurl = newurl + "?embedded=true";
-          }
-
-          if (url.indexOf("?standalone=true") >= 0) {
-            newurl = newurl + "?standalone=true";
-          }
-
-          console.log (newurl);
-          // e.target.setAttribute('href', newurl + ':ignore');
-          window.location.href = newurl;
-
-        });
-
-      });
-
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
