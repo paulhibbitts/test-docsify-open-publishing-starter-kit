@@ -216,7 +216,6 @@
             // beforeEach and afterEach support asynchronous。
             // ...
             // call `next(html)` when task is done.
-            next(html);
 
             // Get current Docsify URL without any parmarmeters
             var url = '';
@@ -248,7 +247,10 @@
                 URLparms = URLparms + `&toc=true`;
               }
 
-              const links = Array.from(document.querySelectorAll('a'))
+              var htmlElement = document.createElement('div');
+              htmlElement.innerHTML = html;
+
+              const links = Array.from(htmlElement.querySelectorAll('a'))
 
               for (const link of links) {
                 console.log(link.getAttribute('href'));
@@ -268,6 +270,8 @@
                   }
                 }
               }
+              console.log(htmlElement.innerHTML);
+              next(htmlElement.innerHTML);
             });
 
           hook.beforeEach(function(html) {
