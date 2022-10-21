@@ -244,6 +244,10 @@
                 URLparms = URLparms + `&hidegitlink=true`;
               }
 
+              if (getURLParameterByName('toc') || ToC) {
+                URLparms = URLparms + `&toc=true`;
+              }
+
               const links = Array.from(document.querySelectorAll('a'))
 
               for (const link of links) {
