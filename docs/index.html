@@ -210,6 +210,59 @@
 
         function(hook, vm) {
 
+          hook.afterEach(function(html, next) {
+            // Invoked each time after the Markdown file is parsed.
+            // beforeEach and afterEach support asynchronous。
+            // ...
+            // call `next(html)` when task is done.
+            next(html);
+
+            // Get current Docsify URL without any parmarmeters
+            var url = '';
+            url = window.location.href
+            url = url.replace(/[#].*/, ''); // Strips anything after #
+            url = url.replace(/[?].*/, ''); // Strips anything after ?
+            console.log(url); //www.example.com
+
+            if (getURLParameterByName(['standalone','embedded'])) {
+
+              // Carry any existing URL parms in links
+              var URLparms = '';
+
+              if (getURLParameterByName('standalone')) {
+                URLparms = `?standalone=true`;
+              }
+
+              if (getURLParameterByName('embedded')) {
+                URLparms = `?embedded=true`;
+              }
+
+              const links = Array.from(document.querySelectorAll('a'))
+
+              for (const link of links) {
+                // console.log(link.getAttribute('href'));
+                // Find any local Markdown file links
+                // console.log(link.getAttribute('href'));
+                // console.log(link.getAttribute('href')?.match(/^#/));
+                // console.log(link.getAttribute('href').includes('id='));
+                if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
+                  console.log(link.getAttribute('href'));
+                  // Modify each Markdown file link to include existing parms
+                  // console.log(lastSegment.startsWith("?id"));
+                  // Check to make sure link is not Docsify id anchor link
+                  var existingLink = link.getAttribute('href');
+                    console.log(existingLink);
+                    // Update Markdown file link
+                    var newURL = ''
+                    newURL = url + existingLink + URLparms;
+                    console.log("Changed:");
+                    console.log(newURL);
+                    link.setAttribute('href', newURL);
+                  }
+                }
+              }
+            });
+
           hook.beforeEach(function(html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
