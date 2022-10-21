@@ -1,6 +1,8 @@
 # Introduction
 
-Link to home page [Home](home.md).
+Link to local page [Standalone](standalone-page.md).
+
+Link to home page [Home](README.md).
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 

@@ -173,7 +173,6 @@
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
       externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
-      catchPluginErrors: false,
       // SIDEBAR NAVIGATION
       // ----------------------------------------------------------------
       auto2top: true,
@@ -269,7 +268,6 @@
                   console.log(link.getAttribute('href'));
                   }
                 }
-            console.log(htmlElement.innerHTML);
             next(htmlElement.innerHTML);
             } else {
                 next(html);
