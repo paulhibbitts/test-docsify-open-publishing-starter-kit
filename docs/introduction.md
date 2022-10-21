@@ -2,6 +2,8 @@
 
 Link to local page [Standalone](standalone-page.md).
 
+<a href="http://localhost:3000/#/standalone-page?standalone=true" onClick="window.location.reload()">Standalone</a>
+
 Link to home page [Home](README.md).
 
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.

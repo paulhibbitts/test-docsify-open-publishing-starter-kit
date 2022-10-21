@@ -2,6 +2,8 @@
 
 Link to local page [Introduction](introduction.md).
 
+<a href="http://localhost:3000/#/introduction?standalone=true" onClick="window.location.reload()">Introduction</a>
+
 This is an example standalone page, where an image from a shared folder is included. This page also shows how to add classes to Markdown images and text for altering their appearance.
 
 ![Mountain](images/chase-moyer-730496-unsplash.jpg)  
