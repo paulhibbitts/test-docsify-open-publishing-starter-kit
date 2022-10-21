@@ -10,8 +10,9 @@
   <link rel="icon" href="assets/favicon/favicon.png">
 
   <!-- Theme: Simple (light + dark) -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" /> -->
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
 
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -112,7 +113,7 @@
   <div id="app"></div>
   <script>
     // Enter the URL of your own GitHub Repository in between the two quotes below
-    var gitLinkRepoURL = '';
+    var gitLinkRepoURL = 'https://google.com';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editThisPageLinkText = 'Edit this Page';
@@ -209,6 +210,61 @@
       plugins: [
 
         function(hook, vm) {
+
+          hook.afterEach(function(html, next) {
+            // Invoked each time after the Markdown file is parsed.
+            // beforeEach and afterEach support asynchronous。
+            // ...
+            // call `next(html)` when task is done.
+            next(html);
+
+            // Get current Docsify URL without any parmarmeters
+            var url = '';
+            url = window.location.href
+            url = url.replace(/[#].*/, ''); // Strips anything after #
+            url = url.replace(/[?].*/, ''); // Strips anything after ?
+            console.log(url); //www.example.com
+
+            console.log(getURLParameterByName(['standalone','embedded']) || standalone );
+
+            if (getURLParameterByName(['standalone','embedded']) || standalone ) {
+
+              // Carry any existing URL parms in links
+              var URLparms = '';
+
+              if (getURLParameterByName('standalone') || standalone ) {
+                URLparms = `?standalone=true`;
+              }
+
+              if (getURLParameterByName('embedded')) {
+                URLparms = `?embedded=true`;
+              }
+
+              if (getURLParameterByName('hidegitlink')) {
+                URLparms = URLparms + `&hidegitlink=true`;
+              }
+
+              const links = Array.from(document.querySelectorAll('a'))
+
+              for (const link of links) {
+                console.log(link.getAttribute('href'));
+                // Find any local Markdown file links not including Docsify id anchor links
+                if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
+                  // Modify each Markdown file link to include existing parms
+                  var existingLink = link.getAttribute('href');
+                  existingLink = existingLink.replace('#/', '');
+                  console.log(existingLink);
+                  // Update Markdown file link
+                  var newURL = ''
+                  newURL = url + '#/' + existingLink + URLparms;
+                  console.log("Changed:");
+                  console.log(newURL);
+                  link.setAttribute('href', newURL);
+                  console.log(link.getAttribute('href'));
+                  }
+                }
+              }
+            });
 
           hook.beforeEach(function(html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
