@@ -220,8 +220,7 @@
             // Get current Docsify URL without any parmarmeters
             var url = '';
             url = window.location.href
-            url = url.replace(/[#].*/, ''); // Strips anything after #
-            url = url.replace(/[?].*/, ''); // Strips anything after ?
+            url = url.replace(/[#].*/, ''); // Strips anything after ?
             console.log(url); //www.example.com
 
             if (getURLParameterByName(['standalone','embedded'])) {
@@ -247,14 +246,14 @@
                 // console.log(link.getAttribute('href').includes('id='));
                 if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
                   console.log(link.getAttribute('href'));
+                  console.log(window.$docsify['basePath']);
                   // Modify each Markdown file link to include existing parms
                   // console.log(lastSegment.startsWith("?id"));
                   // Check to make sure link is not Docsify id anchor link
                   var existingLink = link.getAttribute('href');
-                    console.log(existingLink);
                     // Update Markdown file link
                     var newURL = ''
-                    newURL = url + existingLink + URLparms;
+                    newURL = existingLink + URLparms;
                     console.log("Changed:");
                     console.log(newURL);
                     link.setAttribute('href', newURL);
