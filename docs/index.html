@@ -252,7 +252,6 @@
               const links = Array.from(htmlElement.querySelectorAll('a'))
 
               for (const link of links) {
-                console.log(link);
                 console.log(link.getAttribute('href'));
                 // Find any local Markdown file links not including Docsify id anchor links
                 if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
