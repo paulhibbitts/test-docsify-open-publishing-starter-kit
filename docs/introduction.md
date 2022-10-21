@@ -2,7 +2,7 @@
 
 Link to local page [Standalone](standalone-page.md).
 
-<a href="http://localhost:3000/#/standalone-page?standalone=true" onClick="window.location.reload()">Standalone</a>
+<a href="http://localhost:3000/#/standalone-page?standalone=true" onclick="setTimeout(location.reload.bind(location), 1)">Standalone</a>
 
 Link to home page [Home](README.md).
 
