@@ -1,5 +1,7 @@
 # Introduction
 
+Link to home page [Home](home.md).
+
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
 ![The Markdown Mark](images/markdown-red.png)  
