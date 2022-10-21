@@ -252,6 +252,7 @@
               const links = Array.from(htmlElement.querySelectorAll('a'))
 
               for (const link of links) {
+                console.log(link);
                 console.log(link.getAttribute('href'));
                 // Find any local Markdown file links not including Docsify id anchor links
                 if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
@@ -265,6 +266,8 @@
                   console.log("Changed:");
                   console.log(newURL);
                   link.setAttribute('href', newURL);
+                  // Force page reload to work around possible Docsify sidebar update issues
+                  link.setAttribute("onclick","setTimeout(location.reload.bind(location), 1)");
                   console.log(link.getAttribute('href'));
                   }
                 }
