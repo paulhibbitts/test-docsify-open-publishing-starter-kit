@@ -119,7 +119,7 @@
     var editThisPageLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
-    var standalone = true;
+    var standalone = false;
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
     var ToC = false;
@@ -173,7 +173,7 @@
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || false),
       externalLinkTarget: (getURLParameterByName(['standalone','embedded'],'_top','_blank')),
-
+      catchPluginErrors: false,
       // SIDEBAR NAVIGATION
       // ----------------------------------------------------------------
       auto2top: true,
