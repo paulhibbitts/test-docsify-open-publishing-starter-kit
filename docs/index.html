@@ -269,10 +269,12 @@
                   console.log(link.getAttribute('href'));
                   }
                 }
-              }
-              console.log(htmlElement.innerHTML);
-              next(htmlElement.innerHTML);
-            });
+            console.log(htmlElement.innerHTML);
+            next(htmlElement.innerHTML);
+            } else {
+                next(html);
+            }
+          });
 
           hook.beforeEach(function(html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
