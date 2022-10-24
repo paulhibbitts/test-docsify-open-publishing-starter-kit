@@ -101,6 +101,8 @@ https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/
 Example Docsify page displaying only page content (i.e., no sidebar is shown):  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?standalone=true  
 
+Please note that Docsify page-to-page navigation is not currently supported with the ‘embedded’ URL parameter. This functionality, however, is available by using the [Docsify-This](https://docsify-this.net/#/) project to display the same Markdown pages.
+
 To optionally show a page Table of Contents (based on included Headers), use the following:
 
 `?‘standalone’=true&toc=true`
@@ -119,7 +121,7 @@ Example Docsify page displaying only page content:
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
 
 Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&hidegitlink=true.
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true&hidegitlink=true  
 
 🖼 Presenting your Docsify Page Content as Standalone Webpages
 ---  
