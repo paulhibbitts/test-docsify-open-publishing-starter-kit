@@ -1,7 +1,8 @@
 # Introduction
 
-Link to local page [Standalone](standalone-page.md).
+Link to site page [Standalone](standalone-page.md).
 
+Link to localhost page 
 <a href="http://localhost:3000/#/standalone-page?standalone=true" onclick="window.location.href='http://localhost:3000/#/standalone-page?standalone=true'">Standalone</a>
 
 Link to home page [Home](README.md).
