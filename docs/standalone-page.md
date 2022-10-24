@@ -2,7 +2,7 @@
 
 Link to local page [Introduction](introduction.md).
 
-<a href="http://localhost:3000/#/introduction?standalone=true" onclick="setTimeout(location.reload.bind(location), 1)">Introduction</a>
+<a href="http://localhost:3000/#/introduction?standalone=true" onclick="window.location.href='http://localhost:3000/#/introduction?standalone=true'">Introduction</a>
 
 This is an example standalone page, where an image from a shared folder is included. This page also shows how to add classes to Markdown images and text for altering their appearance.
 

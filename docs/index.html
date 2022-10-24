@@ -265,12 +265,10 @@
                   console.log("Changed:");
                   console.log(newURL);
                   link.setAttribute('href', newURL);
-                  // Force page reload to work around possible Docsify sidebar update issues
-                  link.setAttribute("onclick","setTimeout(location.reload.bind(location), 10)");
                   console.log(link.getAttribute('href'));
                   }
                 }
-            next(htmlElement.innerHTML);
+              next(htmlElement.innerHTML);
             } else {
                 next(html);
             }
