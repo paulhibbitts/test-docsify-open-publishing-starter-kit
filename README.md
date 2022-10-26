@@ -93,7 +93,7 @@ The optional ‘standalone’ (all lowercase) URL parameter hides a site’s sid
 
 To only display Docsify page content, add the following to a Docsify page URL:
 
-`?‘standalone’=true`
+`?standalone=true`
 
 Example standard Docsify page:  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/  
@@ -105,7 +105,7 @@ Please note that Docsify page-to-page navigation is not currently supported with
 
 To optionally show a page Table of Contents (based on included Headers), use the following:
 
-`?‘standalone’=true&toc=true`
+`?standalone=true&toc=true`
 
 Example Docsify page displaying only page content:  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
@@ -115,7 +115,7 @@ https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/int
 
 To optionally hide the 'Edit this Page' link, use the following:
 
-`?‘standalone’=true&hidegitlink=true`
+`?standalone=true&hidegitlink=true`
 
 Example Docsify page displaying only page content:  
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?standalone=true  
