@@ -113,7 +113,7 @@
   <div id="app"></div>
   <script>
     // Enter the URL of your own GitHub Repository in between the two quotes below
-    var gitLinkRepoURL = 'https://google.com';
+    var gitLinkRepoURL = 'https://github.com/paulhibbitts/test-docsify-open-publishing-starter-kit';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editThisPageLinkText = 'Edit this Page';
@@ -216,15 +216,6 @@
             // ...
             // call `next(html)` when task is done.
 
-            // Get current Docsify URL without any parmarmeters
-            var url = '';
-            url = window.location.href
-            url = url.replace(/[#].*/, ''); // Strips anything after #
-            url = url.replace(/[?].*/, ''); // Strips anything after ?
-            console.log(url); //www.example.com
-
-            console.log(getURLParameterByName(['standalone','embedded']) || standalone );
-
             if (getURLParameterByName(['standalone','embedded']) || standalone ) {
 
               // Carry any existing URL parms in links
@@ -257,11 +248,9 @@
                 if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
                   // Modify each Markdown file link to include existing parms
                   var existingLink = link.getAttribute('href');
-                  existingLink = existingLink.replace('#/', '');
                   console.log(existingLink);
                   // Update Markdown file link
-                  var newURL = ''
-                  newURL = url + '#/' + existingLink + URLparms;
+                  var newURL = existingLink + URLparms;
                   console.log("Changed:");
                   console.log(newURL);
                   link.setAttribute('href', newURL);
