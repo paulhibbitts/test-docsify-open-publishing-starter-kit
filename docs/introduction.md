@@ -1,11 +1,5 @@
 # Introduction
 
-Link to site page [Standalone](standalone-page.md).
-
-Link to deep link page [Topic 3](topic-three/overview.md).
-
-Link to home page [Home](README.md).
-
 **Markdown** is a better way to write **HTML**, without all the complexities and ugliness that usually accompanies it.
 
 ![The Markdown Mark](images/markdown-red.png)  
@@ -48,7 +42,7 @@ Renders to:
 <h3>  h3 Heading </h3>
 <h4>  h4 Heading </h4>
 <h5>  h5 Heading </h5>
-<h6>  h6 Heading </h6>
+<h6>  h6 Heading </h6> 
 
 HTML:
 
