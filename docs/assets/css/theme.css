@@ -298,7 +298,7 @@
 }
 
 body .app-nav {
-  margin-right: -10px;
+  max-width: var(--content-max-width);
 }
 
 body .docsify-pagination-container {
