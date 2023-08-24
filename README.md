@@ -67,7 +67,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 3. Tap the **Pencil Icon** (top left-hand toolbar area) to start the editor
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 4](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-4.png)
 
-4. Find the line `var gitLinkRepoURL = '';` and enter the URL of your own GitHub Repository in between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
+4. Find the line `var gitLinkRepoURL = '';` and enter the URL of your own GitHub Repository between the two quotes and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 5](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-5.png)
 
 💻 Locally Editing Your Docsify Site Pages
@@ -99,17 +99,17 @@ Example standard Docsify page:
 https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/  
 
 Example Docsify page displaying only page content (i.e., no sidebar is shown):  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/?embedding=true  
 
 To optionally show a page Table of Contents (based on included Headers), use the following:
 
 `?embedded=true&toc=true`
 
 Example Docsify page displaying only page content:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedding=true  
 
 Example Docsify page displaying only page content with a page Table of Contents included:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedded=true&toc=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedding=true&toc=true  
 
 To optionally override the hiding of the navbar when displaying only page content, use the following:
 
@@ -126,10 +126,10 @@ To optionally hide the 'Edit this Page' link, use the following:
 `?embedded=true&hidegitlink=true`
 
 Example Docsify page displaying only page content:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedded=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedding=true  
 
 Example Docsify page displaying only page content with the 'Edit this Page' link hidden:  
-https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedded=true&hidegitlink=true  
+https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/introduction?embedding=true&hidegitlink=true  
 
 To optionally show the footer ('_footer.md' file), use the following:
 
@@ -175,19 +175,45 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 🧰 Useful Markdown CSS Classes
 ---
 
+`accordion`
+
+```html
+<div class="accordion">
+
+<details>
+  <summary>Topic One</summary>
+  
+  Topic one details here.
+  
+</details>
+
+<details>
+  <summary>Topic Two</summary>
+  
+  Topic two details here.
+  
+</details>
+
+</div>
+```
+
 `badge`  
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
-`banner-image`  
+```html
+<span class='badge'> [Tue May 16 2:30pm PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
+```
+
+`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`banner-tall-image`  
+`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
@@ -203,18 +229,6 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 
 ```markdown
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
-```
-
-`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
-
-```markdown
-![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
-```
-
-`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
-
-```markdown
-![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
 `header-image-fade` (suggested width of 1200px to 2000px)  
@@ -247,6 +261,46 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 ![Photo of Mountain](images/mountain.jpg ':class=image-25')
 ```
 
+`image-75-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-75-border')
+```
+
+`image-50-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-50-border')
+```
+
+`image-25-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-25-border')
+```
+
+`image-border`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-border')
+```
+
+`image-border-rounded`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
+```
+
+`navpill`
+
+```markdown
+[GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
+```
+
+```html
+<a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+```
+
 `row` & `column`  
 
 ```html
@@ -271,7 +325,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
 `video-container-16by9`  
-Automatically added to all iframes with the source domains 'youtube.com' or 'docs.google.com'.  
+Automatically added to all iFrames with the source domains 'youtube.com' or 'docs.google.com'.  
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
