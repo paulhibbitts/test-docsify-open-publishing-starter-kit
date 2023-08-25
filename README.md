@@ -333,7 +333,7 @@ Automatically added to all iFrames with the source domains 'youtube.com' or 'doc
 🎨 Visual Customization
 ---
 
-A Docsify Open Course Starter Kit site can be visually customized using CSS within the `custom.css` file located in the folder `docs/assets/css`. Using this file, [Docsify Themeable CSS settings](https://jhildenbiddle.github.io/docsify-themeable/#/customization?id=base) can also be configured, as seen in the examples provided in the default `custom.css` file.
+A Docsify Open Publishing Starter Kit site can be visually customized using CSS within the `custom.css` file located in the folder `docs/assets/css`. Using this file, [Docsify Themeable CSS settings](https://jhildenbiddle.github.io/docsify-themeable/#/customization?id=base) can also be configured, as seen in the examples provided in the default `custom.css` file.
 
 Example of custom.css file:  
 
