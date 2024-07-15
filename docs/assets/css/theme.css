@@ -616,7 +616,7 @@ body .docsify-pagination-container {
 
 /* Dark mode colours for use with Core Dark Theme (uncomment to use) */
 @media (prefers-color-scheme: dark) {
-/*
+
   :root {
     --theme-color: #0685D7!important;
     --link-color: #0685D7!important;
@@ -624,4 +624,3 @@ body .docsify-pagination-container {
     --cover-bg: #20587D!important;
   }
 }
-*/
