@@ -12,7 +12,7 @@
   <!-- Docsify v5 Core Theme (required) -->
   <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/core.min.css">
 
-  <!-- Core Dark / Dark Mode Only (add-on) -->
+  <!-- Docsify v5 Core Dark / Dark Mode Only (add-on) -->
   <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)" />
   
   <!-- Sidebar Chevrons Left (add-on) -->
@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
@@ -53,9 +54,10 @@
 
       --theme-color: #0374B5;
       --link-color: #0374B5;
-      --link-underline-thickness: 2px;
+      --link-color-hover: var(--link-color);
+      --link-underline-thickness: 1px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
-      
+
       --blockquote-bg: var(--color-mono-1); /*DOCSIFY v5*/
       
       /* --cover-bg: ; custom coverpage color */
@@ -81,7 +83,7 @@
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
-    
+
     // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
     var navbar = false;
 
@@ -147,7 +149,7 @@
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone),
 
-      skipLink: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
+      skipLink: (!(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('toc'))) || standalone),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
@@ -261,7 +263,7 @@
 
             }
             */
-            
+
             next(htmlElement.innerHTML);
 
           });
@@ -311,8 +313,8 @@
               document.body.appendChild(editCSS);
             }
 
-            // Update all iframes with source domains 'youtube.com', 'youtube-nocookie.com' or 'docs.google.com' to include the default responsive CSS Markdown class `video-container-16by9`
-            const allIframes = Array.from(document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"]'));
+            // Update all iframes with source domains 'youtube.com', 'youtube-nocookie.com', 'docs.google.com' or 'onedrive.live.com' to include the default responsive CSS Markdown class `video-container-16by9`
+            const allIframes = Array.from(document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]'));
 
             // Filter out iframes that are not already wrapped with a div including the classes 'video-container-16by9' and 'video-container-4by3'
             const targetIframes = allIframes.filter(function(iframe) {
@@ -332,7 +334,7 @@
               iframe.parentNode.replaceChild(wrapperDiv, iframe);
               wrapperDiv.appendChild(iframe);
             });
-            
+
           });
 
         }
