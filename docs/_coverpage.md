@@ -1,8 +1,6 @@
 # 💻
 
-<h1 id="cover-heading">
-  My Open Publishing Space
-</h1>
+# My Open Publishing Space
 
 > Create, Share and Collaborate
 
