@@ -149,11 +149,14 @@
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
       search: {
-        depth: 3,
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto',
+        placeholder: 'Type to search',
         noData: 'No matches found.',
-        placeholder: 'Enter search text here...',
-        hideOtherSidebarContent: true,
+        // Headline depth, 1 - 6
+        depth: 6,
         namespace: 'Docsify Open Publishing Starter Kit',
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         insertAfter: '.app-name',
       },
 
