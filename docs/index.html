@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://docsify-preview-orhet61nc-docsifyjs.vercel.app/dist/themes/core.min.css" />
 
   <!-- Core Dark (add-on) -->
-  <link rel="stylesheet" href="https://docsify-preview-orhet61nc-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
+  <link rel="stylesheet" href="https://docsify-preview-orhet61nc-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)" />
 
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -130,9 +130,9 @@
       // -----------------------------------------------------------------
       name: 'Docsify Open Publishing Starter Kit',
       homepage: 'home.md',
-      coverpage      : '_coverpage.md',
+      coverpage: '_coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || false),
       externalLinkTarget: standalone ? '_top' : (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
 
@@ -177,9 +177,9 @@
       // -----------------------------------------------------------------
       plugins: [
 
-        function (hook, vm) {
+        function(hook, vm) {
 
-          hook.afterEach(function (html, next) {
+          hook.afterEach(function(html, next) {
             // Invoked each time after the Markdown file is parsed.
             // beforeEach and afterEach support asynchronous。
             // ...
@@ -235,7 +235,7 @@
                 }
               }
             }
-              
+
             /* JS to change Embedly cards to light or dark theme based on system setting when using the light + dark theme (uncomment to use) */
             /*
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
@@ -266,7 +266,7 @@
 
           });
 
-          hook.beforeEach(function (html) {
+          hook.beforeEach(function(html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
                 .replace('raw.githubusercontent.com', 'github.com')
@@ -285,14 +285,14 @@
           });
 
           // Invoked on each page load after new HTML has been appended to the DOM
-          hook.doneEach(function () {
+          hook.doneEach(function() {
             var hasEmbedly = document.getElementsByClassName('embedly-card');
             if (hasEmbedly.length > 0) {
-                // elements with class "embedly-card" exist
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://cdn.embedly.com/widgets/platform.js';    
-                document.head.appendChild(script);
+              // elements with class "embedly-card" exist
+              var script = document.createElement('script');
+              script.type = 'text/javascript';
+              script.src = 'https://cdn.embedly.com/widgets/platform.js';
+              document.head.appendChild(script);
             }
 
             // Remove optional ToC area if full width header image is present
