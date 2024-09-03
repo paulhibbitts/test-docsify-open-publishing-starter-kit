@@ -70,7 +70,7 @@ Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.
 4. Find the line `var gitLinkRepoURL = '';` and enter the URL of your own GitHub Repository between the two quotes (replace `github.com` with `github.dev` to use the GitHub.dev web-based editor currently in Beta) and then scroll down to the bottom of the page and tap the **Commit changes** button to save your changes
 ![ Docsify Open Publishing Starter Kit - “Edit this Page” Link 5](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-gitlink-5.png)
 
-To remove the “Edit this Page” link on your Docsify site, restore the value of `gitLinkRepoURL` to `''`;
+To remove the “Edit this Page” link on your Docsify site, restore the value of `gitLinkRepoURL` to `''`.
 
 💻 Locally Editing Your Docsify Site Pages
 ---  
@@ -343,6 +343,12 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 <a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
 ```
 
+`responsive`
+
+```html
+<img src="https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main/images/docsify-this-web-page-builder.jpg" width="910" height="682" class="responsive image-border" alt="Docsify-This Web Page Builder">
+```
+
 `row` & `column`  
 
 ```html
@@ -353,6 +359,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 </div>
 <div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+</div>
+```
+
+```html
+<div class="row reverse-columns">
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+</div>
+```
+
+```html
+<div class="row">
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+<div class="column-right">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
