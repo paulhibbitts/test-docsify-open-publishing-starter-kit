@@ -174,10 +174,6 @@ Please note a page must have a series of Headings (#, ##, ###) for the Table of 
 [Docsify Documentation](https://docsify.js.org/#/?id=docsifyg)  
 [Docsify Basics by MichaelCurrin](https://michaelcurrin.github.io/docsify-js-tutorial/#/?id=docsify-basics)  
 
-**Docsify Themable**  
-[Docsify Themeable Documentation](https://jhildenbiddle.github.io/docsify-themeable/#/introduction)  
-[Docsify Themeable GitHub](https://github.com/jhildenbiddle/docsify-themeable)  
-
 **Markdown**  
 [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
 [Markdown Guide](https://www.markdownguide.org/)  
@@ -437,7 +433,7 @@ Markdown:
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=mybutton')
 ```
 
-[Docsify Themeable CSS settings](https://jhildenbiddle.github.io/docsify-themeable/#/customization?id=base) can also be configured, as seen in the examples provided in the default `custom.css` file.
+Docsify theme settings can also be configured, as seen in the examples provided in the default `custom.css` file.
 
 CSS:  
 ```css
@@ -477,5 +473,4 @@ _Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvar
 
 🙇‍Credits and Special Thanks
 ---
-[Docsify Themeable](https://github.com/jhildenbiddle/docsify-themeable)  
-[Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
+All past and current Docsify.js.org maintainers and contributors.
