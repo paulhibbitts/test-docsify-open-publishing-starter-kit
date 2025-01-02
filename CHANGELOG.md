@@ -15,7 +15,6 @@
 * Focus on hidden Sidebar items is prevented (via Docsify v5)
 * Top navbar can now accept focus (via Docsify v5)
 * Improved search results, which exclude Markdown formating syntax (via Docsify v5)
-* Changed default setting of `mergeNavbar` to true
 
 **Breaking:**
 * With the use of Docsify v5 Legacy Browsers (for example, Internet Explorer 11) are no longer supported
