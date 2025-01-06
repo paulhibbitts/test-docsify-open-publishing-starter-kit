@@ -6,7 +6,7 @@
   - [Subtopic One](topic-three-subtopic-one.md "Topic Three, Subtopic One")
   - [Subtopic Two](topic-three-subtopic-two.md "Topic Three, Subtopic Two")
 
-- PROJECT INFO
+**PROJECT INFO**  
 * [GitHub Repository](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/)  
 * [ReadMe](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md)  
 
