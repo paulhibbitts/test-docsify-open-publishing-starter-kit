@@ -1,6 +1,6 @@
 # 💻
 
-# My Open Publishing Space
+# Open Publishing Space
 
 > Create, Share and Collaborate
 
