@@ -173,6 +173,8 @@
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone),
 
+      skipLink: (!(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('toc'))) || standalone),
+
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
       search: {
@@ -411,8 +413,6 @@
     }
 
   </script>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script> -->
 
   <!-- Docsify "develop" branch preview files -->
   <script src="assets/vendor/docsify/docsify.min.js"></script>
