@@ -40,7 +40,6 @@
 * Updated example custom CSS for Moodle LMS
 * Updated to latest stable Docsify 4.x preview build (including Marked 4.2.12)
 * Support horizontal scrolling in code blocks
-* Updated example Coverpage title
 * Adjusted bottom margin for summary elements
 * Match Docsify-This CSS with Docsify Starter Kits CSS
 * Browser-level image lazy loading via plugin 'docsify-loading' no longer enabled by default to match updated Docsify-This behaviour
