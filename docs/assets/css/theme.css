@@ -728,7 +728,7 @@ body .docsify-pagination-container {
   }
 }
 
-/* Dark mode custom colours for use with Core Dark Theme (uncomment to use, and remove @media and matching closing bracket for dark mode only) */
+/* Dark mode custom colours for use with Core Dark Theme (uncomment to use, and remove @media statement and matching closing bracket for dark mode only) */
 /*
 @media (prefers-color-scheme: dark) {
   :root {
