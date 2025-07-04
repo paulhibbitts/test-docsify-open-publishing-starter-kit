@@ -359,6 +359,18 @@ When the Docsify v5 theme is enabled, to style Blockquotes similarly to the defa
 </div>
 ```
 
+`card-rounded`
+
+```html
+<div class="card-rounded">
+
+  ## [Card Title](#)
+  ![Card Image](images/example.jpg)
+  Card content goes here.
+
+</div>
+```
+
 `embedly-card` (for linked article previews, embedded slides/videos, etc.)  
 
 ```markdown
