@@ -395,6 +395,14 @@ When the Docsify v5 theme is enabled, to style Blockquotes similarly to the defa
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
 ```
 
+`header-image-full-width-headings-overlay` (Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ":class=header-image-full-width-headings-overlay")
+
+# Page Title
+```
+
 `image-75` (scale image to 75%)
 
 ```markdown
