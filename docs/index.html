@@ -122,7 +122,7 @@
       homepage: 'home.md',
       // coverpage: '_coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || embedded || false),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || embedded && !navbar || false),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && (getURLParameterByName('navbar')) || embedded && !navbar || false),
       mergeNavbar: true,
       externalLinkTarget: embedded ? '_top' : (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
