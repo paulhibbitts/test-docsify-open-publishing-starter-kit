@@ -407,7 +407,7 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
 }
 
 /* Only apply negative margin when both banner image and mergedNavbar nav exist */
-aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
+aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
     margin-bottom: -40px !important;
 }
 
