@@ -303,7 +303,8 @@
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
-            var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=align-items-vertically")\n'
+
+            var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=edit-link edit-link")\n'
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html
