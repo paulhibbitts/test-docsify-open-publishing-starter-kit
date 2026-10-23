@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.0.1](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.1)
+### XX/XX/2026
+
+**Improved:**
+* Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), turned on with the new mermaidDiagrams setting and loaded only on pages with diagrams
+
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
 ### 07/27/2026
 
