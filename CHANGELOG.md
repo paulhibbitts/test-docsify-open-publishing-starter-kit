@@ -5,6 +5,7 @@
 
 **Improved:**
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), turned on with the new mermaidDiagrams setting and loaded only on pages with diagrams
+* Updated MathJax from 2 to 3.2.2 in the optional LaTeX Plugin lines, adding chemistry (\ce) and other LaTeX extras
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
 ### 07/27/2026
