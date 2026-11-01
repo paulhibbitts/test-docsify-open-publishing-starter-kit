@@ -14,6 +14,7 @@
 * Cards in a list line up across each row (image, title, text), however long their titles are
 * Show the navbar on phones instead of merging it into the sidebar (`mergeNavbar: false`), as in Docsify-This
 * An empty navbar no longer leaves space above the page
+* A bold first line in a sidebar (such as a guide or course name) shows slightly larger, as a label for the list
 * Updated ReadMe
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
