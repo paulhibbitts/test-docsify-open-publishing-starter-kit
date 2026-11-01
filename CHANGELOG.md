@@ -12,6 +12,8 @@
 * Draw Mermaid diagrams in Mermaid's dark theme when the page is in dark mode (as the Grav Mermaid plugin does)
 * A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
 * Cards in a list line up across each row (image, title, text), however long their titles are
+* Show the navbar on phones instead of merging it into the sidebar (`mergeNavbar: false`), as in Docsify-This
+* An empty navbar no longer leaves space above the page
 * Updated ReadMe
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
