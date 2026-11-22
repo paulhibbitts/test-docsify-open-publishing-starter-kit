@@ -21,6 +21,7 @@
 * Updated ReadMe with where the Continue reading link goes, and what search engines can index
 * Badges have WCAG AA contrast: the default background is a little darker
 * Start Reading again after the guide's section cards, as in Grav Open Publishing Space
+* Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
 
 ## [v2.1.1](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.1.1)
 ### 11/17/2026
