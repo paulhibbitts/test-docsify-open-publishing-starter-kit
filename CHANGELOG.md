@@ -8,6 +8,7 @@
 * Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
 * Portrait guide cover: `guide-cover-portrait`, added to `guide-cover`, shows a book cover whole at its own shape
 * Keep My Place: a Continue reading bar on the guide's home page, right above its section cards, to the Sidebar page last read (its label can be changed with `keepMyPlace.label`)
+* Sticky Previous/Next: on phones, Previous/Next stay in a bar at the bottom of the screen, as on Open Publishing Space guide pages
 
 **Improved:**
 * A long site title wraps onto a second line on phones instead of running off the page
