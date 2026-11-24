@@ -54,7 +54,7 @@ A few tips:
 
 🧩 Variations
 ---
-Each variation is this kit with a few changes, and a template of its own – open its demo to see it, or start your own site from its template, as in the Quickstart below:
+Each variation is built on this kit and is a template of its own – open its demo to see it, or start your own site from its template, as in the Quickstart below:
 
 - **Dark** – a dark theme · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-dark/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-dark)
 - **Dark Mode Auto** – light or dark, following the reader's system setting · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-dark-mode-auto/) · [Template](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-dark-mode-auto)
