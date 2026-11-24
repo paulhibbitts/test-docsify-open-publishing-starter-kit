@@ -7,7 +7,7 @@
 * Example guide: the sample pages are now a guide, Open Education Essentials (as in Grav Open Publishing Space), with a cover and a card for each section on its home page, a folder per section and collapsible section groups in the sidebar
 * Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
 * Portrait guide cover: `guide-cover-portrait`, added to `guide-cover`, shows a book cover whole at its own shape
-* Keep My Place: a Continue reading bar on the guide's home page, right above its section cards, to the Sidebar page last read (its label can be changed with `keepMyPlace.label`)
+* Keep My Place: a Continue reading bar on the home page (on each course's or guide's home page in sites with several), to the Sidebar page last read
 * Sticky Previous/Next: on phones, Previous/Next stay in a bar at the bottom of the screen, as on Open Publishing Space guide pages
 
 **Improved:**
@@ -18,11 +18,12 @@
 * Each page has its own Browser tab title, such as "Week 1 | CPT-363" or "Module 2 | CPT363-1"
 * The ← → keys go to the previous and next page
 * Updated ReadMe with how the example guide is put together, how to make it your own and how to add a section, and a link to the multiple guides example
-* Updated ReadMe with where the Continue reading link goes, and what search engines can index
 * Badges have WCAG AA contrast: the default background is a little darker
 * Start Reading again after the guide's section cards, as in Grav Open Publishing Space
 * Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
-* The home page has the Use this Template button and Project Info links instead of the Sidebar, which it hides, and no About This Guide section
+* The home page has the Use this Template button and Project Info links, and no About This Guide section
+* Section card titles stay out of search results
+* Section 2's opening paragraph is no longer joined to its last learning objective
 
 ## [v2.1.1](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.1.1)
 ### 11/17/2026
@@ -47,6 +48,17 @@
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), turned on with the new mermaidDiagrams setting and loaded only on pages with diagrams
 * Updated MathJax from 2 to 3.2.2 in the optional LaTeX Plugin lines, adding chemistry (\ce) and other LaTeX extras
 * Draw Mermaid diagrams in Mermaid's dark theme when the page is in dark mode (as the Grav Mermaid plugin does)
+* Load Embedly platform.js unconditionally instead of only when a card is detected in the DOM
+* Add collapsible mobile ToC toggle and fix mobile width/rule bugs
+* Pad and contain responsive table labels so long headers don't collide or overflow on mobile
+* Unify docsify-v5-core.css and responsive tables plugin across docsify-this and starter kits
+* Sync print.css image grid print rules from Docsify-This
+* Add optional Mermaid and LaTeX support, commented out by default
+* Add Edit this Page position and text settings and fix link vertical alignment
+* Enable crossChapter and use a patched pagination plugin that skips external links
+* Show pagination page names when the sidebar is hidden, with smaller titles on phones
+* Give long navbars (6 or more links) room for their extra rows on phones
+* Support a top Edit this Page link below full-width header images
 * A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
 * Cards in a list line up across each row (image, title, text), however long their titles are
 * Show the navbar on phones instead of merging it into the sidebar (`mergeNavbar: false`), as in Docsify-This
@@ -54,6 +66,9 @@
 * The sidebar no longer shows briefly while a page that hides it is loading
 * A bold first line in a sidebar (such as a guide or course name) shows slightly larger, as a label for the list
 * Updated ReadMe
+
+**Bugfix:**
+* Add top margin to tables and Mermaid diagrams so they don't sit flush against headings
 
 ## [v2.0.0](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.0.0)
 ### 07/27/2026
