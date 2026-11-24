@@ -50,7 +50,19 @@ A few tips:
 - On phones, Previous/Next stay in a bar at the bottom of the screen – remove `class="sticky-pagination"` from the `<html>` tag in `docs/index.html` to turn it off
 
 > [!NOTE]
-> For a site with more than one guide, see the [multiple guides example](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-guides), with a Guides page and a Sample Guide.
+> For a site with more than one guide, see the [multiple guides example](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-multiple-guides), with a Guides page and a Sample Guide.
+
+🧩 Variations
+---
+Each variation is this kit with a few changes. Open its demo, or see what changed to make the same change to your own site:
+
+- **Dark** – a dark theme · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-dark/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-dark) · [What changed](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-dark:main)
+- **Dark Mode Auto** – light or dark, following the reader's system setting · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-dark-mode-auto/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-dark-mode-auto) · [What changed](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-dark-mode-auto:main)
+- **Coverpage** – a full-screen cover before the guide · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-coverpage/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-coverpage) · [What changed](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-coverpage:main)
+- **Guide with image cards** – a picture on each section card · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-guide/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-guide) · [What changed](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-guide:main)
+- **Multiple guides** – a Guides page with a card for each guide · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-multiple-guides/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-multiple-guides) · [What changed](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-multiple-guides:main)
+- **Blog** – a blog, with a card for each post · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-blog/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-blog) · [What changed](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-blog:main)
+- **Multilanguage** – the site in English and French · [Demo](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit-multilanguage/) · [Repo](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit-multilanguage) · [What changed](https://github.com/hibbitts-design/demo-docsify-open-publishing-starter-kit/compare/main...hibbitts-design:demo-docsify-open-publishing-starter-kit-multilanguage:main)
 
 🚀 GitHub Pages Quickstart
 ---
