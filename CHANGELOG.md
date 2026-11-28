@@ -25,6 +25,9 @@
 * Section card titles stay out of search results
 * Section 2's opening paragraph is no longer joined to its last learning objective
 
+**Bugfix:**
+* Cards in a list are the same height in each row, even when one has fewer parts (such as no subtitle)
+
 ## [v2.1.1](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/releases/tag/v2.1.1)
 ### 11/17/2026
 
